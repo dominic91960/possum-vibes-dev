@@ -17,7 +17,7 @@ const Collection = () => {
         }}
       />
 
-      <div className="px-container relative container mx-auto pb-[4em]">
+      <div className="px-container relative z-[2] container mx-auto pb-[4em]">
         <SectionTitle
           text="Our NFT Collections"
           className="mb-[0.6em] pt-[0.7em] text-center sm:mb-[0.4em] lg:mb-[0.5em]"
@@ -27,6 +27,15 @@ const Collection = () => {
           <Carousel />
         </div>
       </div>
+
+      <Image
+        src={seperator}
+        alt="Vector"
+        className="absolute right-0 bottom-0 left-0 z-[1] w-full translate-y-1/2 scale-105"
+        style={{
+          clipPath: "polygon(0 7%, 100% 7%, 100% 100%, 0 100%",
+        }}
+      />
     </section>
   );
 };

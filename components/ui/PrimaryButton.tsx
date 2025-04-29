@@ -3,11 +3,11 @@ import React from "react";
 import { cn } from "@/lib/utils";
 
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  buttonText: string;
+  buttonText?: string;
 };
 
 const PrimaryButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, buttonText, ...props }, ref) => {
+  ({ className, buttonText = "", children, ...props }, ref) => {
     return (
       <button
         ref={ref}
@@ -17,7 +17,7 @@ const PrimaryButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
         )}
         {...props}
       >
-        {buttonText}
+        {children ?? buttonText}
       </button>
     );
   },
