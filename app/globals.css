@@ -16,6 +16,7 @@
   --font-main: var(--font-grandstander);
   --color-primary: #65f54e;
   --color-secondary: #75d8cd;
+  --color-dark: #212121;
   --spacing-container: var(--container-padding);
 }
 
