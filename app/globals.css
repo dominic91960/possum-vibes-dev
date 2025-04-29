@@ -1,1 +1,57 @@
 @import "tailwindcss";
+
+:root {
+  --container-padding: 15px;
+}
+
+@theme inline {
+  --font-main: var(--font-grandstander);
+  --color-primary: #65f54e;
+  --color-secondary: #75d8cd;
+  --spacing-container: var(--container-padding);
+}
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+  }
+
+  ::selection {
+    color: white;
+    background: black;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+@media (width >= 40rem) {
+  :root {
+    --container-padding: 20px;
+  }
+}
+
+@media (width >= 48rem) {
+  :root {
+    --container-padding: 30px;
+  }
+}
+
+@media (width >= 64rem) {
+  :root {
+    --container-padding: 40px;
+  }
+}
+
+@media (width >= 80rem) {
+  :root {
+    --container-padding: 45px;
+  }
+}
+
+@media (width >= 96rem) {
+  :root {
+    --container-padding: 50px;
+  }
+}

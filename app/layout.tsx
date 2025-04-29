@@ -3,7 +3,7 @@ import { Grandstander } from "next/font/google";
 import "./globals.css";
 
 const grandstander = Grandstander({
-  variable: "--font-geist-mono",
+  variable: "--font-grandstander",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
@@ -20,7 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${grandstander.variable} antialiased`}>{children}</body>
+      <body
+        className={`${grandstander.variable} antialiased font-main font-medium`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
