@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${grandstander.variable} antialiased font-main font-medium`}
+        className={`${grandstander.variable} antialiased font-main font-medium text-white leading-[1.2]`}
       >
         {children}
       </body>
