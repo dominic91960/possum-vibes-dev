@@ -7,6 +7,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 import SectionTitle from "./SectionTitle";
 import PrimaryButton from "../ui/PrimaryButton";
+import CopyCode from "./CopyCode";
 import bg from "@/public/images/home-page/tokenomics/bg.jpg";
 import cloud from "@/public/images/home-page/tokenomics/cloud.png";
 
@@ -26,9 +27,7 @@ const Tokenomics = () => {
           B7UTsn7SBLRH5fyYRFW3QVXJzkhG5MjJhKn3ZqcYjmtU
         </p>
 
-        <p className="mt-[1em] mb-[1.2em] text-[20px] font-bold text-[#25F706] sm:text-[23px] md:text-[26px] lg:mt-[0.2em] lg:text-[29px] xl:text-[32px] 2xl:text-[35px]">
-          Copy to Clipboard
-        </p>
+        <CopyCode />
 
         <div className="mb-[3em] flex flex-col items-center justify-between gap-[1em] sm:flex-row">
           <PrimaryButton
