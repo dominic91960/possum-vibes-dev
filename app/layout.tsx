@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${grandstander.variable} font-main text-[12px] leading-[1.2] font-medium text-white antialiased sm:text-[13px] md:text-[14px] lg:text-[14.5px] xl:text-[15px] 2xl:text-[16px]`}
+        className={`${grandstander.variable} font-main text-[12px] leading-[1.2] font-medium text-white antialiased sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[17px]`}
       >
         {children}
       </body>
