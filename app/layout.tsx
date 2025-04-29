@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Grandstander } from "next/font/google";
+import { Anton, Grandstander } from "next/font/google";
 import "./globals.css";
+
+const anton = Anton({
+  variable: "--font-anton",
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const grandstander = Grandstander({
   variable: "--font-grandstander",
@@ -21,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${grandstander.variable} font-main text-[12px] leading-[1.2] font-medium text-white antialiased sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[17px]`}
+        className={`${anton.variable} ${grandstander.variable} font-main text-[12px] leading-[1.2] font-medium text-white antialiased sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[17px]`}
       >
         {children}
       </body>

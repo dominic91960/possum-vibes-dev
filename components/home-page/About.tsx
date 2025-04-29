@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import SectionTitle from "./SectionTitle";
+import PrimaryButton from "../ui/PrimaryButton";
 import bg from "@/public/images/home-page/about/bg.jpg";
 import possom from "@/public/images/home-page/about/possom.png";
 
@@ -12,6 +13,7 @@ const About = () => {
         src={bg}
         alt="Background"
         className="absolute inset-0 size-full rounded-b-[40px] object-cover object-bottom select-none sm:rounded-b-[50px] md:rounded-b-[60px] lg:rounded-b-[70px] xl:rounded-b-[80px] 2xl:rounded-b-[90px]"
+        placeholder="blur"
       />
 
       <div className="px-container relative container mx-auto">
@@ -23,9 +25,10 @@ const About = () => {
           and scrambled it to make a type specimen book.
         </p>
 
-        <button className="bg-primary border-dark text-dark mb-[0.2em] w-fit rounded-[0.5em] border-[0.1em] px-[3em] py-[0.7em] text-[16px] font-bold uppercase shadow-[0.15em_0.15em_0_var(--color-dark)] sm:mb-[2.6em] sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[36px]">
-          Buy $wtfo
-        </button>
+        <PrimaryButton
+          buttonText="Buy $wtfo"
+          className="mb-[0.2em] sm:mb-[2.6em]"
+        />
 
         <Image
           src={possom}

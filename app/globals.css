@@ -14,6 +14,7 @@
 
 @theme inline {
   --font-main: var(--font-grandstander);
+  --font-anton: var(--font-anton);
   --color-primary: #65f54e;
   --color-secondary: #75d8cd;
   --color-light: #fffbd2;
