@@ -20,7 +20,7 @@ const HowToBuy = () => {
         className="absolute top-[50%] right-0 w-1/4 object-cover object-center select-none md:top-[15%]"
       />
 
-      <div className="px-container relative container mx-auto pb-[15em]">
+      <div className="px-container relative container mx-auto pb-[15%] sm:pb-[12%] lg:pb-[10%]">
         <SectionTitle
           text="How to buy"
           className="mb-[0.5em] pt-[0.8em] text-center lg:pt-[0.5em]"
