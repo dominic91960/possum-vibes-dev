@@ -38,8 +38,7 @@ const HeroImageGrid = () => {
     <div className="relative grid w-[72%] grid-cols-1 sm:grid-cols-2">
       <motion.div
         initial={{ opacity: 0, x: "-20%" }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ amount: 0, once: true }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1, duration: 0.7 }}
         style={{ y }}
       >
@@ -51,8 +50,7 @@ const HeroImageGrid = () => {
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: "20%" }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ amount: 0, once: true }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1, duration: 0.7 }}
         style={{ y }}
       >
