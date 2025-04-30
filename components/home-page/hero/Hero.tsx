@@ -35,7 +35,7 @@ const Hero = () => {
 
       <TopCloud />
 
-      <div className="px-container relative container mx-auto flex h-[95dvh] min-h-[calc(450px-10dvh)] flex-col items-center justify-end sm:h-[90dvh] md:min-h-[calc(530px-10dvh)] lg:h-[85dvh] lg:min-h-[calc(768px-15dvh)] xl:min-h-[calc(720px-15dvh)] 2xl:min-h-[calc(1080px-15dvh)]">
+      <div className="px-container relative container mx-auto flex h-[68vh] min-h-[calc(450px-10vh)] flex-col items-center justify-end sm:h-[90vh] md:min-h-[calc(530px-10vh)] lg:h-[85vh] lg:min-h-[calc(768px-15vh)] xl:min-h-[calc(720px-15vh)] 2xl:min-h-[calc(1080px-15vh)]">
         {/* Title */}
         <HeroTitle />
 
