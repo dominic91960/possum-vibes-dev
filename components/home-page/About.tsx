@@ -5,15 +5,25 @@ import SectionTitle from "./SectionTitle";
 import PrimaryButton from "../ui/PrimaryButton";
 import bg from "@/public/images/home-page/about/bg.jpg";
 import possom from "@/public/images/home-page/about/possom.png";
+import seperator from "@/public/images/home-page/about/seperator.svg";
 
 const About = () => {
   return (
-    <section className="bg-light relative pt-[15vw]">
+    <section className="bg-light relative overflow-x-clip pt-[15vw]">
       <Image
         src={bg}
         alt="Background"
         className="absolute inset-0 size-full rounded-b-[40px] object-cover object-bottom select-none sm:rounded-b-[50px] md:rounded-b-[60px] lg:rounded-b-[70px] xl:rounded-b-[80px] 2xl:rounded-b-[90px]"
         placeholder="blur"
+      />
+
+      <Image
+        src={seperator}
+        alt="Vector"
+        className="absolute top-0 right-0 left-0 w-full -translate-y-[40%] scale-105 select-none"
+        style={{
+          clipPath: "polygon(0 0%, 100% 0%, 100% 46%, 0 46%",
+        }}
       />
 
       <div className="px-container relative container mx-auto">

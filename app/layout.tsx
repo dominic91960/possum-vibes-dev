@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Anton, Grandstander } from "next/font/google";
+import { MotionConfig } from "motion/react";
 import "./globals.css";
 
 const anton = Anton({
@@ -29,7 +30,9 @@ export default function RootLayout({
       <body
         className={`${anton.variable} ${grandstander.variable} font-main text-[12px] leading-[1.2] font-medium text-white antialiased sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[17px]`}
       >
-        {children}
+        <MotionConfig transition={{ duration: 2, type: "spring" }}>
+          {children}
+        </MotionConfig>
       </body>
     </html>
   );
