@@ -28,7 +28,7 @@ const CarouelCard: React.FC<CarouelCardProps> = ({
         <Image
           src={img}
           alt={name}
-          className="aspect-[5/4] w-full object-cover object-center"
+          className="aspect-[5/4] w-full object-cover object-center select-none"
         />
       </div>
 

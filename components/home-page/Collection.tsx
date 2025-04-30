@@ -11,7 +11,7 @@ const Collection = () => {
       <Image
         src={seperator}
         alt="Vector"
-        className="absolute right-0 bottom-full left-0 w-full translate-y-1/2 scale-105 rotate-180 rotate-y-180"
+        className="absolute right-0 bottom-full left-0 w-full translate-y-1/2 scale-105 rotate-180 rotate-y-180 select-none"
         style={{
           clipPath: "polygon(0 7%, 100% 7%, 100% 100%, 0 100%",
         }}
@@ -31,7 +31,7 @@ const Collection = () => {
       <Image
         src={seperator}
         alt="Vector"
-        className="absolute right-0 bottom-0 left-0 z-[1] w-full translate-y-1/2 scale-105"
+        className="absolute right-0 bottom-0 left-0 z-[1] w-full translate-y-1/2 scale-105 select-none"
         style={{
           clipPath: "polygon(0 7%, 100% 7%, 100% 100%, 0 100%",
         }}

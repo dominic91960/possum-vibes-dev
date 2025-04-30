@@ -11,7 +11,7 @@ const Footer = () => {
         <Image
           src={bg}
           alt="Possum"
-          className="mx-auto w-3/5 object-cover object-center"
+          className="mx-auto w-3/5 object-cover object-center select-none"
         />
 
         <Link

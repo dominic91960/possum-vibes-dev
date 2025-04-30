@@ -17,7 +17,7 @@ const Tokenomics = () => {
       <Image
         src={bg}
         alt="Tokenomics"
-        className="absolute inset-0 size-full object-cover object-bottom"
+        className="absolute inset-0 size-full object-cover object-bottom select-none"
       />
       <div className="absolute right-0 bottom-0 left-0 h-[40%] bg-gradient-to-t from-[#767272] to-transparent"></div>
 

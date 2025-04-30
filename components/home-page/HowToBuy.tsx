@@ -32,7 +32,11 @@ const HowToBuy = () => {
               key={id}
               className="border-dark mx-auto flex w-fit flex-col items-center justify-between gap-[2em] rounded-[1em] border-[0.2em] bg-[#FFFFDF] px-[2em] pt-[4em] pb-[1.2em] text-center shadow-[0.3em_0.3em_var(--color-dark)]"
             >
-              <Image src={icon} alt={title} className="w-[3.1875em]" />
+              <Image
+                src={icon}
+                alt={title}
+                className="w-[3.1875em] select-none"
+              />
               <p className="text-dark text-[1.5em] font-bold uppercase italic">
                 {title}
               </p>
