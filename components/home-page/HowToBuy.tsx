@@ -8,7 +8,7 @@ import rightCloud from "@/public/images/home-page/how-to-buy/cloud-tr.png";
 
 const HowToBuy = () => {
   return (
-    <section className="bg-light relative overflow-x-clip">
+    <section className="bg-light sticky top-0 right-0 left-0 -z-[1] overflow-x-clip">
       <Image
         src={leftCloud}
         alt="Cloud"
