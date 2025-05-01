@@ -19,8 +19,12 @@ const Collection = () => {
 
       <div className="px-container relative z-[2] container mx-auto pb-[4em]">
         <SectionTitle
+          text="Our NFT_Collections"
+          className="mb-[0.6em] pt-[0.7em] text-center min-[440px]:hidden sm:mb-[0.4em] lg:mb-[0.5em]"
+        />
+        <SectionTitle
           text="Our NFT Collections"
-          className="mb-[0.6em] pt-[0.7em] text-center sm:mb-[0.4em] lg:mb-[0.5em]"
+          className="mb-[0.6em] hidden pt-[0.7em] text-center min-[440px]:block sm:mb-[0.4em] lg:mb-[0.5em]"
         />
 
         <div className="flex justify-between">
