@@ -11,7 +11,7 @@ const TopCloud = () => {
       src={topRightCloud}
       alt="Colud"
       className="absolute top-0 right-0 w-[200px] object-cover object-center select-none sm:w-[240px] md:w-[280px] lg:w-[320px] xl:w-[360px] 2xl:w-[400px]"
-      placeholder="blur"
+      priority
     />
   );
 };
