@@ -30,7 +30,7 @@ const LeftCloud = () => {
   }, []);
 
   const { scrollY } = useScroll();
-  const ySpring = useSpring(scrollY);
+  const ySpring = useSpring(scrollY, { damping: 30 });
   const y = useTransform(ySpring, [0, viewportHeight], ["0px", transform]);
 
   return (
@@ -44,7 +44,7 @@ const LeftCloud = () => {
       <Image
         src={bottomCloud}
         alt="Cloud"
-        className="w-full object-cover object-center select-none"
+        className="ms-auto object-cover object-center select-none"
       />
     </motion.div>
   );

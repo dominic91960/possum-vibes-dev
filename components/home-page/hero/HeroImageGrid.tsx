@@ -31,7 +31,7 @@ const HeroImageGrid = () => {
   }, []);
 
   const { scrollY } = useScroll();
-  const ySpring = useSpring(scrollY);
+  const ySpring = useSpring(scrollY, { damping: 30 });
   const y = useTransform(ySpring, [0, viewportHeight], ["0px", transform]);
 
   return (
