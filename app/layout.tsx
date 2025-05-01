@@ -33,7 +33,7 @@ export default function RootLayout({
         <MotionConfig transition={{ duration: 2, type: "spring" }}>
           {children}
         </MotionConfig>
-        {/* <div id="grainy"></div> */}
+        <div id="grainy"></div>
       </body>
     </html>
   );
