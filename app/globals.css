@@ -45,6 +45,7 @@
 
   #grainy::after {
     content: "";
+    display: none;
     position: absolute;
     top: -110%;
     left: -50%;
@@ -74,43 +75,6 @@
     line-height: 1;
     font-weight: 900;
     font-style: italic;
-  }
-}
-
-@media (width >= 40rem) {
-  :root {
-    --container-padding: 20px;
-  }
-
-  .hero-title {
-    -webkit-text-stroke: 2px var(--color-dark);
-  }
-}
-
-@media (width >= 48rem) {
-  :root {
-    --container-padding: 30px;
-  }
-}
-
-@media (width >= 64rem) {
-  :root {
-    --container-padding: 40px;
-  }
-  .hero-title {
-    -webkit-text-stroke: 3px var(--color-dark);
-  }
-}
-
-@media (width >= 80rem) {
-  :root {
-    --container-padding: 45px;
-  }
-}
-
-@media (width >= 96rem) {
-  :root {
-    --container-padding: 50px;
   }
 }
 
@@ -145,5 +109,45 @@
   }
   90% {
     transform: translate(-10%, 10%);
+  }
+}
+
+@media (width >= 40rem) {
+  :root {
+    --container-padding: 20px;
+  }
+
+  .hero-title {
+    -webkit-text-stroke: 2px var(--color-dark);
+  }
+}
+
+@media (width >= 48rem) {
+  :root {
+    --container-padding: 30px;
+  }
+}
+
+@media (width >= 64rem) {
+  :root {
+    --container-padding: 40px;
+  }
+  #grainy::after {
+    display: block;
+  }
+  .hero-title {
+    -webkit-text-stroke: 3px var(--color-dark);
+  }
+}
+
+@media (width >= 80rem) {
+  :root {
+    --container-padding: 45px;
+  }
+}
+
+@media (width >= 96rem) {
+  :root {
+    --container-padding: 50px;
   }
 }
