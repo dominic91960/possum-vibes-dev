@@ -11,20 +11,20 @@ export const howToBuyData = [
   {
     id: "001",
     icon: howToBuyIcon1,
-    title: "Download wallet",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    title: "WTF trending",
+    text: "Multichain vote for exposure trending channel with informative leaderboard",
   },
   {
     id: "002",
     icon: howToBuyIcon2,
-    title: "Get some eth",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    title: "Trending bot",
+    text: "The voting and leaderboard agent of WTF trending channel",
   },
   {
     id: "003",
     icon: howToBuyIcon3,
-    title: "Switch eth for $wtf",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    title: "Raffle agent",
+    text: "The unruggable blockchain-controlled raffle tool to create events for real holders of any Solana token.",
   },
 ];
 

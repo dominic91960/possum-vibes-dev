@@ -6,7 +6,7 @@ import bg from "@/public/images/home-page/footer/bg.png";
 
 const Footer = () => {
   return (
-    <section className="bg-secondary pt-[5vw]">
+    <section className="bg-secondary relative pt-[5vw]">
       <div className="px-container text-dark relative container mx-auto text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] 2xl:text-[26px]">
         <Image
           src={bg}
