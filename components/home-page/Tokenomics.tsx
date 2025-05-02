@@ -33,27 +33,39 @@ const Tokenomics = () => {
           <PrimaryButton
             buttonText="Ticker: $wtf"
             className="w-[10em] cursor-default bg-[#E59D6F] px-0"
+            disabled
           />
           <PrimaryButton
             buttonText="Tax: 0%"
             className="w-[10em] cursor-default bg-[#FFFBD2] px-0"
+            disabled
           />
           <PrimaryButton
             buttonText="Lp: burned"
             className="w-[10em] cursor-default px-0"
+            disabled
           />
         </div>
 
         <div className="flex justify-center gap-[4em]">
-          <PrimaryButton className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]">
+          <PrimaryButton
+            className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]"
+            spanStyle="bg-primary"
+          >
             <FaXTwitter className="text-[1.3em] sm:text-[1.1em]" />
           </PrimaryButton>
 
-          <PrimaryButton className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]">
+          <PrimaryButton
+            className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]"
+            spanStyle="bg-primary"
+          >
             <FaDiscord className="text-[1.3em] sm:text-[1.1em]" />
           </PrimaryButton>
 
-          <PrimaryButton className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]">
+          <PrimaryButton
+            className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]"
+            spanStyle="bg-primary"
+          >
             <FaTelegramPlane className="text-[1.3em] sm:text-[1.1em]" />
           </PrimaryButton>
         </div>
