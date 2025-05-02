@@ -12,11 +12,20 @@ const PrimaryButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         className={cn(
-          "bg-primary border-dark text-dark w-fit rounded-[0.5em] border-[0.1em] px-[3em] py-[0.7em] text-[16px] font-bold uppercase shadow-[0.15em_0.15em_0_var(--color-dark)] sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[36px]",
+          "bg-primary border-dark text-dark group relative z-[1] w-fit overflow-clip rounded-[0.5em] border-[0.1em] px-[3em] py-[0.7em] text-[16px] font-bold uppercase shadow-[0.15em_0.15em_0_var(--color-dark)] sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[36px]",
           className,
         )}
         {...props}
       >
+        {Array.from({ length: 4 })
+          .fill(undefined)
+          .map((_e, i) => (
+            <span
+              key={i}
+              className="absolute top-0 -z-[1] h-full w-1/4 translate-y-[150%] rounded-full bg-[#FFFFE4] transition-transform duration-500 ease-in-out group-hover:translate-y-0 group-hover:scale-150 group-focus:translate-y-0 group-focus:scale-150"
+              style={{ left: `${i * 25}%`, transitionDelay: `${i * 0.1}s` }}
+            ></span>
+          ))}
         {children ?? buttonText}
       </button>
     );
