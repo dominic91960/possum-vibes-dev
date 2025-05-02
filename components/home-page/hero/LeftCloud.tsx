@@ -45,6 +45,7 @@ const LeftCloud = () => {
         src={bottomCloud}
         alt="Cloud"
         className="ms-auto object-cover object-center select-none"
+        priority
       />
     </motion.div>
   );

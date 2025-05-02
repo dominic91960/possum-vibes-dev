@@ -45,6 +45,7 @@ const RightCloud = () => {
         src={bottomCloud}
         alt="Cloud"
         className="object-cover object-center select-none"
+        priority
       />
     </motion.div>
   );

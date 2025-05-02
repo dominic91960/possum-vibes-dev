@@ -23,13 +23,11 @@ const Hero = () => {
           src={bg}
           alt="Possom"
           className="object-cover object-center select-none"
-          priority
         />
         <Image
           src={bg}
           alt="Possom"
           className="hidden object-cover object-center select-none sm:block"
-          priority
         />
       </div>
 

@@ -46,6 +46,7 @@ const HeroImageGrid = () => {
           src={imgOne}
           alt="Possom"
           className="object-cover object-center select-none"
+          priority
         />
       </motion.div>
       <motion.div
@@ -58,6 +59,7 @@ const HeroImageGrid = () => {
           src={imgTwo}
           alt="Possom"
           className="hidden object-cover object-center select-none sm:block"
+          priority
         />
       </motion.div>
     </div>

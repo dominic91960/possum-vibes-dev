@@ -33,7 +33,6 @@ const HeroRays = () => {
       src={rays}
       alt="rays"
       className="absolute inset-0 size-full scale-[300%] overflow-clip object-cover object-center select-none"
-      priority
     />
   );
 };
