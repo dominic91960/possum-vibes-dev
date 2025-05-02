@@ -3,21 +3,20 @@ import Image from "next/image";
 
 import SectionTitle from "./SectionTitle";
 import { howToBuyData } from "@/lib/constants";
-import leftCloud from "@/public/images/home-page/how-to-buy/cloud-tl.png";
-import rightCloud from "@/public/images/home-page/how-to-buy/cloud-tr.png";
+import cloud from "@/public/images/home-page/how-to-buy/cloud.png";
 
 const HowToBuy = () => {
   return (
     <section className="bg-light sticky top-0 right-0 left-0 -z-[1] overflow-x-clip">
       <Image
-        src={leftCloud}
+        src={cloud}
         alt="Cloud"
-        className="absolute top-[20%] left-0 w-1/4 object-cover object-center select-none md:top-[15%]"
+        className="absolute top-[20%] left-0 w-1/4 max-w-[550px] object-cover object-center select-none md:top-[15%]"
       />
       <Image
-        src={rightCloud}
+        src={cloud}
         alt="Cloud"
-        className="absolute top-[50%] right-0 w-1/4 object-cover object-center select-none md:top-[15%]"
+        className="absolute top-[50%] right-0 w-1/4 max-w-[550px] object-cover object-center select-none md:top-[15%]"
       />
 
       <div className="px-container relative container mx-auto pb-[15%] sm:pb-[12%] lg:pb-[10%]">
