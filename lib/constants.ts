@@ -1,6 +1,6 @@
-import howToBuyIcon1 from "@/public/images/home-page/how-to-buy/icon1.png";
-import howToBuyIcon2 from "@/public/images/home-page/how-to-buy/icon2.png";
-import howToBuyIcon3 from "@/public/images/home-page/how-to-buy/icon3.png";
+import howToBuyImg1 from "@/public/images/home-page/how-to-buy/img1.png";
+import howToBuyImg2 from "@/public/images/home-page/how-to-buy/img2.png";
+import howToBuyImg3 from "@/public/images/home-page/how-to-buy/img3.png";
 
 import nft1 from "@/public/images/home-page/collection/nft1.jpg";
 import nft2 from "@/public/images/home-page/collection/nft2.jpg";
@@ -10,19 +10,19 @@ import nft3 from "@/public/images/home-page/collection/nft3.jpg";
 export const howToBuyData = [
   {
     id: "001",
-    icon: howToBuyIcon1,
+    icon: howToBuyImg1,
     title: "WTF trending",
     text: "Multichain vote for exposure trending channel with informative leaderboard",
   },
   {
     id: "002",
-    icon: howToBuyIcon2,
+    icon: howToBuyImg2,
     title: "Trending bot",
     text: "The voting and leaderboard agent of WTF trending channel",
   },
   {
     id: "003",
-    icon: howToBuyIcon3,
+    icon: howToBuyImg3,
     title: "Raffle agent",
     text: "The unruggable blockchain-controlled raffle tool to create events for real holders of any Solana token.",
   },

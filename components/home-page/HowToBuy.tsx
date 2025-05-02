@@ -6,6 +6,7 @@ import PrimaryButton from "../ui/PrimaryButton";
 
 import { howToBuyData } from "@/lib/constants";
 import cloud from "@/public/images/home-page/how-to-buy/cloud.png";
+import seperator from "@/public/images/home-page/how-to-buy/seperator.svg";
 
 const HowToBuy = () => {
   return (
@@ -31,13 +32,24 @@ const HowToBuy = () => {
           {howToBuyData.map(({ id, icon, title, text }) => (
             <div
               key={id}
-              className="border-dark mx-auto flex w-fit flex-col items-center gap-[0.2em] rounded-[1em] border-[0.2em] bg-[#FFFFDF] px-[2em] pt-[4em] pb-[1.2em] text-center shadow-[0.3em_0.3em_var(--color-dark)]"
+              className="border-dark mx-auto mt-[25%] flex w-fit flex-col items-center gap-[0.2em] rounded-[1em] border-[0.2em] bg-[#FFFFDF] px-[2em] pt-[4em] pb-[1.2em] text-center shadow-[0.3em_0.3em_var(--color-dark)] md:mt-[20%]"
             >
-              <Image
-                src={icon}
-                alt={title}
-                className="w-[3.1875em] select-none"
-              />
+              <div className="relative mx-auto aspect-[5/2] w-4/5 overflow-x-clip">
+                <Image
+                  src={icon}
+                  alt="Possom"
+                  className="absolute right-0 bottom-0 left-0 w-full select-none"
+                />
+                <Image
+                  src={seperator}
+                  alt="Vector"
+                  className="absolute top-full right-0 left-0 w-full -translate-y-[40%] scale-105 select-none"
+                  style={{
+                    clipPath: "polygon(0 0%, 100% 0%, 100% 46%, 0 46%",
+                  }}
+                />
+              </div>
+
               <p className="text-dark mt-[0.2em] text-[1.5em] font-bold uppercase italic">
                 {title}
               </p>
