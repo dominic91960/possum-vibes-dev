@@ -29,11 +29,13 @@ const HeroRays = () => {
     //   </motion.div>
     // </div>
 
-    <Image
-      src={rays}
-      alt="rays"
-      className="absolute inset-0 size-full scale-[300%] overflow-clip object-cover object-center select-none"
-    />
+    <div className="absolute inset-0 overflow-clip">
+      <Image
+        src={rays}
+        alt="rays"
+        className="size-full scale-[300%] object-cover object-center select-none"
+      />
+    </div>
   );
 };
 
