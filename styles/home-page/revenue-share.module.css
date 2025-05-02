@@ -1,0 +1,31 @@
+.custom-grid {
+  display: grid;
+  gap: 1.5em;
+  grid-template-areas: "text-area" "image-area";
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.text-area {
+  grid-area: text-area;
+}
+
+.image-area {
+  grid-area: image-area;
+}
+
+@media (min-width: 1024px) {
+  .custom-grid {
+    align-items: center;
+    gap: 2em;
+    grid-template-areas: "image-area image-area image-area image-area text-area text-area text-area text-area text-area text-area";
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-grid {
+    align-items: center;
+    grid-template-areas: "image-area image-area image-area image-area text-area text-area text-area text-area text-area text-area";
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+}

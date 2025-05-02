@@ -2,13 +2,14 @@ import React from "react";
 import Image from "next/image";
 
 import SectionTitle from "./SectionTitle";
+import PrimaryButton from "../ui/PrimaryButton";
+
 import { howToBuyData } from "@/lib/constants";
 import cloud from "@/public/images/home-page/how-to-buy/cloud.png";
-import PrimaryButton from "../ui/PrimaryButton";
 
 const HowToBuy = () => {
   return (
-    <section className="bg-light sticky top-0 right-0 left-0 overflow-x-clip">
+    <section className="bg-light relative overflow-x-clip">
       <Image
         src={cloud}
         alt="Cloud"

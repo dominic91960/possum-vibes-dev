@@ -7,6 +7,7 @@ import Collection from "@/components/home-page/Collection";
 import Tokenomics from "@/components/home-page/Tokenomics";
 import Footer from "@/components/home-page/Footer";
 import PrimaryButton from "@/components/ui/PrimaryButton";
+import RevenueShare from "@/components/home-page/RevenueShare";
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
       <Hero />
       <About />
       <HowToBuy />
+      <RevenueShare />
       <Collection />
       <Tokenomics />
       <Footer />
