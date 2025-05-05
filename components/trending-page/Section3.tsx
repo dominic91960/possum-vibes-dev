@@ -3,10 +3,11 @@ import Image from "next/image";
 
 import PrimaryButton from "../ui/PrimaryButton";
 import cloud from "@/public/images/home-page/how-to-buy/cloud.png";
+import seperator from "@/public/images/trending-page/section-3/seperator.svg";
 
 const Section3 = () => {
   return (
-    <section className="bg-light relative pb-[10vw]">
+    <section className="bg-light relative overflow-x-clip pb-[10vw]">
       <Image
         src={cloud}
         alt="Cloud"
@@ -122,6 +123,15 @@ const Section3 = () => {
           </div>
         </div>
       </div>
+
+      <Image
+        src={seperator}
+        alt="Vector"
+        className="absolute top-full right-0 left-0 w-full -translate-y-1/2 scale-105 select-none"
+        style={{
+          clipPath: "polygon(0 7%, 100% 7%, 100% 100%, 0 100%",
+        }}
+      />
     </section>
   );
 };
