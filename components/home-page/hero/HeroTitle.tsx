@@ -32,9 +32,9 @@ const HeroTitle = () => {
 
   return (
     <motion.div
-      initial={{ scale: 0 }}
-      animate={{ scale: 1 }}
-      transition={{ bounce: 0.5, duration: 1.5, type: "spring" }}
+      initial={{ opacity: 0, scale: 0.3 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ bounce: 0.3, delay: 1, duration: 3, type: "spring" }}
       style={{ y }}
       className="hero-title absolute inset-0 m-auto size-fit -translate-y-[20%] text-center text-[50px] whitespace-break-spaces uppercase italic select-none sm:text-[75px] md:text-[100px] lg:text-[125px] xl:text-[150px] 2xl:text-[175px]"
     >

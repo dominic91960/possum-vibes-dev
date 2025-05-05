@@ -39,7 +39,7 @@ const HeroImageGrid = () => {
       <motion.div
         initial={{ opacity: 0, x: "-20%" }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 1, duration: 0.7 }}
+        transition={{ delay: 2, duration: 1.5 }}
         style={{ y }}
       >
         <Image
@@ -52,7 +52,7 @@ const HeroImageGrid = () => {
       <motion.div
         initial={{ opacity: 0, x: "20%" }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 1, duration: 0.7 }}
+        transition={{ delay: 2, duration: 1.5 }}
         style={{ y, rotateY: 180 }}
       >
         <Image

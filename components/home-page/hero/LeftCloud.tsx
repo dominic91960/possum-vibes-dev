@@ -37,7 +37,7 @@ const LeftCloud = () => {
     <motion.div
       initial={{ opacity: 0, x: "-20%" }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ delay: 1.5, duration: 0.7 }}
+      transition={{ delay: 2.5, duration: 1.5 }}
       style={{ y }}
       className="absolute bottom-0 left-0 z-[1] w-[55%] -translate-x-[5%] translate-y-1/2"
     >
