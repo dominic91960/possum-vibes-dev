@@ -13,18 +13,24 @@ export const howToBuyData = [
     icon: howToBuyImg1,
     title: "WTF trending",
     text: "Multichain vote for exposure trending channel with informative leaderboard",
+    buttonText: "Learn more",
+    href: "/trending",
   },
   {
     id: "002",
     icon: howToBuyImg2,
     title: "Trending bot",
     text: "The voting and leaderboard agent of WTF trending channel",
+    buttonText: "Learn more",
+    href: "/trending",
   },
   {
     id: "003",
     icon: howToBuyImg3,
     title: "Raffle agent",
     text: "The unruggable blockchain-controlled raffle tool to create events for real holders of any Solana token.",
+    buttonText: "Check out",
+    href: "/raffle",
   },
 ];
 

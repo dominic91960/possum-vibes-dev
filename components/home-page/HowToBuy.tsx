@@ -7,6 +7,7 @@ import PrimaryButton from "../ui/PrimaryButton";
 import { howToBuyData } from "@/lib/constants";
 import cloud from "@/public/images/home-page/how-to-buy/cloud.png";
 import seperator from "@/public/images/home-page/how-to-buy/seperator.svg";
+import Link from "next/link";
 
 const HowToBuy = () => {
   return (
@@ -29,7 +30,7 @@ const HowToBuy = () => {
         />
 
         <div className="grid grid-cols-1 gap-[2em] md:grid-cols-3 lg:gap-[2em] xl:gap-[4em] 2xl:gap-[9em]">
-          {howToBuyData.map(({ id, icon, title, text }) => (
+          {howToBuyData.map(({ id, icon, title, text, buttonText, href }) => (
             <div
               key={id}
               className="border-dark mx-auto mt-[25%] flex w-fit flex-col items-center gap-[0.2em] rounded-[1em] border-[0.2em] bg-[#FFFFDF] px-[2em] pt-[4em] pb-[1.2em] text-center shadow-[0.3em_0.3em_var(--color-dark)] md:mt-[20%]"
@@ -58,11 +59,13 @@ const HowToBuy = () => {
                 {text}
               </p>
 
-              <PrimaryButton
-                buttonText="Learn more"
-                className="mt-auto text-[1.4em] sm:text-[1.4em] md:text-[1.4em] lg:text-[1.4em] xl:text-[1.4em] 2xl:text-[1.4em]"
-                spanStyle="bg-[#FFFFEF]"
-              />
+              <Link href={href} className="mt-auto">
+                <PrimaryButton
+                  buttonText={buttonText}
+                  className="text-[1.4em] sm:text-[1.4em] md:text-[1.4em] lg:text-[1.4em] xl:text-[1.4em] 2xl:text-[1.4em]"
+                  spanStyle="bg-[#FFFFEF]"
+                />
+              </Link>
             </div>
           ))}
         </div>
