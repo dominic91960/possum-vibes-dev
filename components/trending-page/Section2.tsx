@@ -22,31 +22,31 @@ const Section2 = () => {
           TELEGRAM FOR DEVS, HOLDERS AND USERS. THE TOOL IS SIMPLE AS F…!
         </p>
 
-        <div className="flex flex-col justify-between gap-[2em] sm:flex-row">
-          <div className="border-dark text-dark mx-auto flex w-fit flex-col items-center gap-[0.2em] rounded-[1em] border-[0.2em] bg-[#FFFFDF] p-[2em] text-center shadow-[0.3em_0.3em_var(--color-dark)]">
+        <div className="flex flex-col items-center justify-around gap-[2em] lg:flex-row lg:items-stretch">
+          <div className="border-dark text-dark flex w-fit flex-col items-center gap-[0.2em] rounded-[1em] border-[0.2em] bg-[#FFFFDF] p-[2em] text-center shadow-[0.3em_0.3em_var(--color-dark)]">
             <p className="text-[1.8em] font-semibold italic">1</p>
-            <p className="max-w-[24ch] text-[1.2em] font-bold">
+            <p className="max-w-[37ch] text-[1.2em] font-bold lg:max-w-[24ch]">
               ADD WTFTRENDINGBOT TO YOUR TELEGRAM GROUP
             </p>
           </div>
 
-          <div className="border-dark text-dark mx-auto flex w-fit flex-col items-center gap-[0.2em] rounded-[1em] border-[0.2em] bg-[#FFFFDF] p-[2em] text-center shadow-[0.3em_0.3em_var(--color-dark)]">
+          <div className="border-dark text-dark flex w-fit flex-col items-center gap-[0.2em] rounded-[1em] border-[0.2em] bg-[#FFFFDF] p-[2em] text-center shadow-[0.3em_0.3em_var(--color-dark)]">
             <p className="text-[1.8em] font-semibold italic">2</p>
-            <p className="max-w-[24ch] text-[1.2em] font-bold">
+            <p className="max-w-[37ch] text-[1.2em] font-bold lg:max-w-[24ch]">
               SET CONTRACT ADDRESS AND TELEGRAM LINK
             </p>
           </div>
 
-          <div className="border-dark text-dark mx-auto flex w-fit flex-col items-center gap-[0.2em] rounded-[1em] border-[0.2em] bg-[#FFFFDF] p-[2em] text-center shadow-[0.3em_0.3em_var(--color-dark)]">
+          <div className="border-dark text-dark flex w-fit flex-col items-center gap-[0.2em] rounded-[1em] border-[0.2em] bg-[#FFFFDF] p-[2em] text-center shadow-[0.3em_0.3em_var(--color-dark)]">
             <p className="text-[1.8em] font-semibold italic">3</p>
-            <p className="max-w-[24ch] text-[1.2em] font-bold">
+            <p className="max-w-[37ch] text-[1.2em] font-bold lg:max-w-[24ch]">
               START UP THE VOTING AGENT AND KEEP YOUR COMMUNITY ENGAGED TO REACH
               ENOUGH VOTES TO GET PLACED ON THE TOP 10 LEADERBOARD.
             </p>
           </div>
         </div>
 
-        <p className="text-dark mx-auto mt-[1em] mb-[3em] max-w-[44ch] text-center text-[16px] font-medium sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[36px]">
+        <p className="text-dark mx-auto mt-[1em] mb-[3em] max-w-[44ch] text-center text-[16px] font-medium sm:mb-[4.5em] sm:text-[20px] md:text-[24px] lg:mb-[3em] lg:text-[28px] xl:text-[32px] 2xl:text-[36px]">
           EASY HUH? THEN LET’S GO!
         </p>
 
