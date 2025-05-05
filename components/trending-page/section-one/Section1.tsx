@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import HeroRays from "../home-page/hero/HeroRays";
-import LeftCloud from "../home-page/hero/LeftCloud";
-import RightCloud from "../home-page/hero/RightCloud";
+import HeroRays from "../../home-page/hero/HeroRays";
+import LeftCloud from "./LeftCloud";
+import RightCloud from "./RightCloud";
 import possom from "@/public/images/trending-page/section-1/possom.png";
 
 const Section1 = () => {

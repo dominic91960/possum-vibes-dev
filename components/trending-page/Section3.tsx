@@ -6,7 +6,7 @@ import cloud from "@/public/images/home-page/how-to-buy/cloud.png";
 
 const Section3 = () => {
   return (
-    <section className="bg-light relative">
+    <section className="bg-light relative pb-[10vw]">
       <Image
         src={cloud}
         alt="Cloud"
