@@ -4,11 +4,11 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
 
-import bottomCloud from "@/public/images/home-page/hero/cloud.png";
+import possom from "@/public/images/trending-page/section-1/possom.png";
 
-const LeftCloud = () => {
+const MainImage = () => {
   const [viewportHeight, setViewportHeight] = useState(0);
-  const [transform, setTransform] = useState("-60px");
+  const [transform, setTransform] = useState("-40px");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -19,7 +19,7 @@ const LeftCloud = () => {
       const width = window.innerWidth;
 
       if (width >= 640) {
-        setTransform("-120px");
+        setTransform("-80px");
       }
     };
 
@@ -35,20 +35,23 @@ const LeftCloud = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: "-20%" }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ delay: 0.25, duration: 1 }}
+      className="mx-auto w-1/2 rotate-y-180 overflow-clip sm:w-2/5"
       style={{ y }}
-      className="absolute bottom-0 left-0 z-[1] w-[55%] -translate-x-[5%] translate-y-1/2"
     >
-      <Image
-        src={bottomCloud}
-        alt="Cloud"
-        className="ms-auto object-cover object-center select-none"
-        priority
-      />
+      <motion.div
+        initial={{ opacity: 0, y: "20%" }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <Image
+          src={possom}
+          alt="Possum"
+          className="object-contain object-center"
+          priority
+        />
+      </motion.div>
     </motion.div>
   );
 };
 
-export default LeftCloud;
+export default MainImage;

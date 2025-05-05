@@ -1,10 +1,9 @@
 import React from "react";
-import Image from "next/image";
 
 import HeroRays from "../../home-page/hero/HeroRays";
 import LeftCloud from "./LeftCloud";
 import RightCloud from "./RightCloud";
-import possom from "@/public/images/trending-page/section-1/possom.png";
+import MainImage from "./MainImage";
 
 const Section1 = () => {
   return (
@@ -19,11 +18,7 @@ const Section1 = () => {
           HYPE UP YOUR COMMUNITY AND SHOWCASE YOUR SHITCOIN!
         </p>
 
-        <Image
-          src={possom}
-          alt="Possum"
-          className="mx-auto w-1/2 rotate-y-180 object-contain object-center sm:w-2/5"
-        />
+        <MainImage />
       </div>
 
       <LeftCloud />
