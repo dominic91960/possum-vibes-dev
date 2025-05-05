@@ -53,7 +53,7 @@ const HeroTitle = () => {
         ))}
       </p>
       <p>
-        {"Possom Vibes".split("").map((e, i) => (
+        {"Possum Vibes".split("").map((e, i) => (
           <motion.span
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.1 }}
