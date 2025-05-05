@@ -4,7 +4,7 @@ import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 // import PrimaryButton from "../ui/PrimaryButton";
 import bg from "@/public/images/home-page/about/bg.jpg";
-import possom from "@/public/images/home-page/about/possom-new.png";
+import possom from "@/public/images/home-page/about/possom.png";
 import seperator from "@/public/images/home-page/about/seperator.svg";
 
 const About = () => {
