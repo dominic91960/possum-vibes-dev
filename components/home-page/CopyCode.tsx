@@ -8,7 +8,7 @@ const CopyCode = () => {
   const onCopy = () => {
     setIsCopied(true);
     navigator.clipboard.writeText(
-      "B7UTsn7SBLRH5fyYRFW3QVXJzkhG5MjJhKn3ZqcYjmtU",
+      "8C4RygkxmePm9ys1qCcAB46dUCXNQYTaqfxS5mBrpump",
     );
     setTimeout(() => setIsCopied(false), 3000);
   };

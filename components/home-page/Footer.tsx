@@ -15,10 +15,10 @@ const Footer = () => {
         />
 
         <Link
-          href="mailto:contact@wtf.com"
+          href="mailto:wtf@wtfo.online"
           className="absolute bottom-[1em] left-[1em] text-shadow-[0.05em_0.05em_white] lg:text-shadow-none"
         >
-          contact@wtf.com
+          wtf@wtfo.online
         </Link>
 
         <p className="absolute right-[1em] bottom-[1em] text-shadow-[0.05em_0.05em_white] lg:text-shadow-none">

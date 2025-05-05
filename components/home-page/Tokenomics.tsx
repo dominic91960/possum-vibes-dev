@@ -1,15 +1,19 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
+import { FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
+import { SiCoinmarketcap } from "react-icons/si";
 
 import SectionTitle from "./SectionTitle";
 import PrimaryButton from "../ui/PrimaryButton";
 import CopyCode from "./CopyCode";
 import bg from "@/public/images/home-page/tokenomics/bg.jpg";
 import cloud from "@/public/images/home-page/tokenomics/cloud.png";
+import CoinGeckoIcon from "../ui/CoinGeckoIcon";
 
 const Tokenomics = () => {
   return (
@@ -24,7 +28,7 @@ const Tokenomics = () => {
       <div className="px-container relative container mx-auto pb-[12%] text-center lg:pb-[10%]">
         <SectionTitle text="Tokenomics" className="mb-[0.1em] pt-[0.7em]" />
         <p className="overflow-hidden text-[16px] font-bold text-shadow-[0.1em_0.1em_var(--color-dark)] sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[36px]">
-          B7UTsn7SBLRH5fyYRFW3QVXJzkhG5MjJhKn3ZqcYjmtU
+          8C4RygkxmePm9ys1qCcAB46dUCXNQYTaqfxS5mBrpump
         </p>
 
         <CopyCode />
@@ -47,27 +51,69 @@ const Tokenomics = () => {
           />
         </div>
 
-        <div className="flex justify-center gap-[4em]">
-          <PrimaryButton
-            className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]"
-            spanStyle="bg-primary"
+        <div className="flex flex-wrap justify-center gap-x-[4em] gap-y-[1em]">
+          <Link
+            href="https://www.coingecko.com/en/coins/wtf-opossum"
+            target="_blank"
           >
-            <FaXTwitter className="text-[1.3em] sm:text-[1.1em]" />
-          </PrimaryButton>
+            <PrimaryButton
+              className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]"
+              spanStyle="bg-primary"
+            >
+              <CoinGeckoIcon />
+            </PrimaryButton>
+          </Link>
 
-          <PrimaryButton
-            className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]"
-            spanStyle="bg-primary"
+          <Link
+            href="https://coinmarketcap.com/currencies/wtf-opossum/"
+            target="_blank"
           >
-            <FaDiscord className="text-[1.3em] sm:text-[1.1em]" />
-          </PrimaryButton>
+            <PrimaryButton
+              className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]"
+              spanStyle="bg-primary"
+            >
+              <SiCoinmarketcap className="text-[1.5em] sm:text-[1.3em]" />
+            </PrimaryButton>
+          </Link>
 
-          <PrimaryButton
-            className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]"
-            spanStyle="bg-primary"
+          <Link href="https://t.me/wtfopossum" target="_blank">
+            <PrimaryButton
+              className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]"
+              spanStyle="bg-primary"
+            >
+              <FaTelegramPlane className="text-[1.3em] sm:text-[1.1em]" />
+            </PrimaryButton>
+          </Link>
+
+          <Link
+            href="https://www.tiktok.com/@wtfopossum?_t=ZN-8urzaoLuVuc&_r=1"
+            target="_blank"
           >
-            <FaTelegramPlane className="text-[1.3em] sm:text-[1.1em]" />
-          </PrimaryButton>
+            <PrimaryButton
+              className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]"
+              spanStyle="bg-primary"
+            >
+              <FaTiktok className="text-[1.3em] sm:text-[1.1em]" />
+            </PrimaryButton>
+          </Link>
+
+          <Link href="https://x.com/wtfopossum" target="_blank">
+            <PrimaryButton
+              className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]"
+              spanStyle="bg-primary"
+            >
+              <FaXTwitter className="text-[1.3em] sm:text-[1.1em]" />
+            </PrimaryButton>
+          </Link>
+
+          <Link href="https://discord.gg/39NzUafTYe" target="_blank">
+            <PrimaryButton
+              className="flex size-[3em] items-center justify-center rounded-full bg-white p-0 shadow-[0.06em_0.06em_0_var(--color-dark)] md:size-[2.4em]"
+              spanStyle="bg-primary"
+            >
+              <FaDiscord className="text-[1.3em] sm:text-[1.1em]" />
+            </PrimaryButton>
+          </Link>
         </div>
       </div>
 
