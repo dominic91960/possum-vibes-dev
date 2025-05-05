@@ -35,7 +35,7 @@ const Tokenomics = () => {
 
         <div className="mb-[3em] flex flex-col items-center justify-between gap-[1em] sm:flex-row">
           <PrimaryButton
-            buttonText="Ticker: $wtf"
+            buttonText="Ticker: $wtfo"
             className="w-[10em] cursor-default bg-[#E59D6F] px-0"
             disabled
           />
