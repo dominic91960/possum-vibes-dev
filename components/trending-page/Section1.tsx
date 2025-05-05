@@ -8,7 +8,7 @@ import possom from "@/public/images/trending-page/section-1/possom.png";
 
 const Section1 = () => {
   return (
-    <section className="bg-secondary relative">
+    <section className="bg-secondary relative overflow-x-clip">
       <HeroRays />
 
       <div className="px-container relative container mx-auto">
