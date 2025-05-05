@@ -7,7 +7,7 @@ import Footer from "@/components/trending-page/Footer";
 
 const TrendingPage = () => {
   return (
-    <main>
+    <main className="relative z-[1]">
       <Section1 />
       <Section2 />
       <Section3 />
