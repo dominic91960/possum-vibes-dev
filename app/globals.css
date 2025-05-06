@@ -10,6 +10,7 @@
 
 :root {
   --container-padding: 15px;
+  --swiper-navigation-color: #212121;
 }
 
 @theme inline {
