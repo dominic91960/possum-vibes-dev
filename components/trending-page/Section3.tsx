@@ -4,6 +4,7 @@ import Image from "next/image";
 import PrimaryButton from "../ui/PrimaryButton";
 import cloud from "@/public/images/home-page/how-to-buy/cloud.png";
 import seperator from "@/public/images/trending-page/section-3/seperator.svg";
+import Link from "next/link";
 
 const Section3 = () => {
   return (
@@ -68,14 +69,18 @@ const Section3 = () => {
             </p>
 
             <div className="mt-auto flex flex-col gap-[1em] sm:flex-row">
-              <PrimaryButton
-                buttonText="Learn more"
-                className="w-full text-[14px] sm:w-auto sm:text-[16px] md:text-[18px] lg:text-[19.5px] xl:text-[21px] 2xl:text-[23px]"
-              />
-              <PrimaryButton
-                buttonText="Boost a token"
-                className="w-full text-[14px] sm:w-auto sm:text-[16px] md:text-[18px] lg:text-[19.5px] xl:text-[21px] 2xl:text-[23px]"
-              />
+              <Link href="https://t.me/wtfinfosuite/3">
+                <PrimaryButton
+                  buttonText="Learn more"
+                  className="w-full text-[14px] sm:w-auto sm:text-[16px] md:text-[18px] lg:text-[19.5px] xl:text-[21px] 2xl:text-[23px]"
+                />
+              </Link>
+              <Link href="https://t.me/WTFTrendingBot?start=boost">
+                <PrimaryButton
+                  buttonText="Boost a token"
+                  className="w-full text-[14px] sm:w-auto sm:text-[16px] md:text-[18px] lg:text-[19.5px] xl:text-[21px] 2xl:text-[23px]"
+                />
+              </Link>
             </div>
           </div>
 
@@ -111,14 +116,18 @@ const Section3 = () => {
             </p>
 
             <div className="mt-auto flex flex-col gap-[1em] sm:flex-row">
-              <PrimaryButton
-                buttonText="Learn more"
-                className="w-full text-[14px] sm:w-auto sm:text-[16px] md:text-[18px] lg:text-[19.5px] xl:text-[21px] 2xl:text-[23px]"
-              />
-              <PrimaryButton
-                buttonText="Boost a token"
-                className="w-full text-[14px] sm:w-auto sm:text-[16px] md:text-[18px] lg:text-[19.5px] xl:text-[21px] 2xl:text-[23px]"
-              />
+              <Link href="https://t.me/wtfinfosuite/3">
+                <PrimaryButton
+                  buttonText="Learn more"
+                  className="w-full text-[14px] sm:w-auto sm:text-[16px] md:text-[18px] lg:text-[19.5px] xl:text-[21px] 2xl:text-[23px]"
+                />
+              </Link>
+              <Link href="https://t.me/WTFTrendingBot?start=trend">
+                <PrimaryButton
+                  buttonText="Trend a token"
+                  className="w-full text-[14px] sm:w-auto sm:text-[16px] md:text-[18px] lg:text-[19.5px] xl:text-[21px] 2xl:text-[23px]"
+                />
+              </Link>
             </div>
           </div>
         </div>

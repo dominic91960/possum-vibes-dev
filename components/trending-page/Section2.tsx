@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import bg from "@/public/images/trending-page/section-2/bg.jpg";
 import PrimaryButton from "../ui/PrimaryButton";
@@ -51,12 +52,20 @@ const Section2 = () => {
         </p>
 
         <div className="flex flex-col items-center justify-center gap-[1em] pb-[2em] sm:flex-row">
-          <PrimaryButton
-            buttonText="wtf tg bot"
-            className="w-[21ch]"
-            disabled
-          />
-          <PrimaryButton buttonText="wtf trend" className="w-[21ch]" disabled />
+          <Link href="https://t.me/WTFTRENDINGBOT">
+            <PrimaryButton
+              buttonText="wtf tg bot"
+              className="w-[21ch]"
+              disabled
+            />
+          </Link>
+          <Link href="https://t.me/WTFTRENDING">
+            <PrimaryButton
+              buttonText="wtf trend"
+              className="w-[21ch]"
+              disabled
+            />
+          </Link>
         </div>
       </div>
     </section>
