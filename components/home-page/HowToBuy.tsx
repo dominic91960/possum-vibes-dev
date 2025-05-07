@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const HowToBuy = () => {
   return (
-    <section className="bg-light relative overflow-x-clip">
+    <section className="bg-light sticky top-0 overflow-x-clip">
       <Image
         src={cloud}
         alt="Cloud"

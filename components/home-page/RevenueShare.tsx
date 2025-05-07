@@ -8,7 +8,7 @@ import classes from "@/styles/home-page/revenue-share.module.css";
 
 const RevenueShare = () => {
   return (
-    <section className="sticky top-0 overflow-x-clip bg-[#96897B]">
+    <section className="relative overflow-x-clip bg-[#96897B]">
       <Image
         src={seperator}
         alt="Vector"
