@@ -25,20 +25,7 @@ const generateBill = (id: number): Bill => ({
 });
 
 const MoneyRain = () => {
-  const [loaded, setLoaded] = useState(false);
   const [bills, setBills] = useState<Bill[]>([]);
-
-  useEffect(() => {
-    if (document.readyState === "complete") {
-      setLoaded(true);
-      return;
-    }
-
-    const onLoad = () => setLoaded(true);
-    window.addEventListener("load", onLoad);
-
-    return () => window.removeEventListener("load", onLoad);
-  }, []);
 
   useEffect(() => {
     const interval = setInterval(
@@ -67,31 +54,30 @@ const MoneyRain = () => {
 
   return (
     <div className="h-vh pointer-events-none fixed inset-0 z-[99] overflow-hidden">
-      {loaded &&
-        bills.map((bill) => (
-          <motion.div
-            key={bill.id}
-            initial={{ top: "-10%", rotate: 0 }}
-            animate={{ top: "140%", rotate: bill.rotate }}
-            transition={{ duration: bill.duration, ease: "linear" }}
-            onAnimationComplete={() => handleAnimationComplete(bill.id)}
-            style={{
-              position: "absolute",
-              left: `${bill.left}%`,
-              zIndex: bill.zIndex,
-              scale: bill.scale,
-              height: "auto",
-              y,
-            }}
-          >
-            <Image
-              src={money}
-              alt="Dollar bill"
-              className="w-[60px] select-none sm:w-[65px] md:w-[70px] lg:w-[75px] xl:w-[77px] 2xl:w-[80px]"
-              draggable={false}
-            />
-          </motion.div>
-        ))}
+      {bills.map((bill) => (
+        <motion.div
+          key={bill.id}
+          initial={{ top: "-10%", rotate: 0 }}
+          animate={{ top: "140%", rotate: bill.rotate }}
+          transition={{ duration: bill.duration, ease: "linear" }}
+          onAnimationComplete={() => handleAnimationComplete(bill.id)}
+          style={{
+            position: "absolute",
+            left: `${bill.left}%`,
+            zIndex: bill.zIndex,
+            scale: bill.scale,
+            height: "auto",
+            y,
+          }}
+        >
+          <Image
+            src={money}
+            alt="Dollar bill"
+            className="w-[60px] select-none sm:w-[65px] md:w-[70px] lg:w-[75px] xl:w-[77px] 2xl:w-[80px]"
+            draggable={false}
+          />
+        </motion.div>
+      ))}
     </div>
   );
 };
