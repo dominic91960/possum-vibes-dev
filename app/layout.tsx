@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Anton, Grandstander } from "next/font/google";
 import { MotionConfig } from "motion/react";
 import "./globals.css";
+import MoneyRain from "@/components/ui/MoneyRain";
 
 const anton = Anton({
   variable: "--font-anton",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <MotionConfig transition={{ duration: 2, type: "spring" }}>
           {children}
         </MotionConfig>
+        <MoneyRain />
         <div id="grainy"></div>
       </body>
     </html>
