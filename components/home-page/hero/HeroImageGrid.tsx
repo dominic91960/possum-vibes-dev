@@ -8,23 +8,24 @@ import possom1 from "@/public/images/home-page/hero/possom1.png";
 import possom2 from "@/public/images/home-page/hero/possom2.png";
 
 const HeroImageGrid = () => {
+  const [contentLoaded, setContentLoaded] = useState(false);
   const [viewportHeight, setViewportHeight] = useState(0);
-  const [transform, setTransform] = useState("-40px");
+  const [transform, setTransform] = useState("-20px");
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setViewportHeight(window.innerHeight);
-    }
+    const handleContentLoad = () => {
+      setContentLoaded(true);
+    };
 
     const setTransformValue = () => {
-      const width = window.innerWidth;
+      if (typeof window === "undefined") return;
+      if (window.innerWidth >= 640) setTransform("-40px");
 
-      if (width >= 640) {
-        setTransform("-80px");
-      }
+      setViewportHeight(window.innerHeight);
     };
 
     setTransformValue();
+    handleContentLoad();
     addEventListener("resize", setTransformValue);
 
     return () => removeEventListener("resize", setTransformValue);
@@ -38,7 +39,9 @@ const HeroImageGrid = () => {
     <div className="relative grid w-[60%] grid-cols-1 gap-[10%] sm:w-[66%] sm:grid-cols-2">
       <motion.div
         initial={{ opacity: 0, x: "-20%" }}
-        animate={{ opacity: 1, x: 0 }}
+        animate={
+          contentLoaded ? { opacity: 1, x: 0 } : { opacity: 0, x: "-20%" }
+        }
         transition={{ delay: 2, duration: 1.5 }}
         style={{ y }}
       >

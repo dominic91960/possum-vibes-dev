@@ -4,23 +4,24 @@ import React, { useEffect, useState } from "react";
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
 
 const HeroTitle = () => {
+  const [contentLoaded, setContentLoaded] = useState(false);
   const [viewportHeight, setViewportHeight] = useState(0);
   const [transform, setTransform] = useState("-20px");
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setViewportHeight(window.innerHeight);
-    }
+    const handleContentLoad = () => {
+      setContentLoaded(true);
+    };
 
     const setTransformValue = () => {
-      const width = window.innerWidth;
+      if (typeof window === "undefined") return;
+      if (window.innerWidth >= 640) setTransform("-40px");
 
-      if (width >= 640) {
-        setTransform("-40px");
-      }
+      setViewportHeight(window.innerHeight);
     };
 
     setTransformValue();
+    handleContentLoad();
     addEventListener("resize", setTransformValue);
 
     return () => removeEventListener("resize", setTransformValue);
@@ -33,7 +34,9 @@ const HeroTitle = () => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.3 }}
-      animate={{ opacity: 1, scale: 1 }}
+      animate={
+        contentLoaded ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.3 }
+      }
       transition={{ bounce: 0.3, delay: 1, duration: 3, type: "spring" }}
       style={{ y }}
       className="hero-title absolute inset-0 m-auto size-fit -translate-y-[20%] text-center text-[50px] whitespace-break-spaces uppercase italic select-none sm:text-[75px] md:text-[100px] lg:text-[125px] xl:text-[150px] 2xl:text-[175px]"

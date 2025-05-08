@@ -7,23 +7,24 @@ import { motion, useScroll, useSpring, useTransform } from "motion/react";
 import possom from "@/public/images/trending-page/section-1/possom.png";
 
 const MainImage = () => {
+  const [contentLoaded, setContentLoaded] = useState(false);
   const [viewportHeight, setViewportHeight] = useState(0);
-  const [transform, setTransform] = useState("-40px");
+  const [transform, setTransform] = useState("-20px");
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setViewportHeight(window.innerHeight);
-    }
+    const handleContentLoad = () => {
+      setContentLoaded(true);
+    };
 
     const setTransformValue = () => {
-      const width = window.innerWidth;
+      if (typeof window === "undefined") return;
+      if (window.innerWidth >= 640) setTransform("-40px");
 
-      if (width >= 640) {
-        setTransform("-80px");
-      }
+      setViewportHeight(window.innerHeight);
     };
 
     setTransformValue();
+    handleContentLoad();
     addEventListener("resize", setTransformValue);
 
     return () => removeEventListener("resize", setTransformValue);
@@ -40,7 +41,9 @@ const MainImage = () => {
     >
       <motion.div
         initial={{ opacity: 0, y: "20%" }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={
+          contentLoaded ? { opacity: 1, y: 0 } : { opacity: 0, y: "20%" }
+        }
         transition={{ duration: 1 }}
       >
         <Image
