@@ -28,15 +28,18 @@ const MoneyRain = () => {
   const [bills, setBills] = useState<Bill[]>([]);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setBills((prev) => {
-        const next = [...prev];
-        if (next.length < 3) {
-          next.push(generateBill(Date.now()));
-        }
-        return next;
-      });
-    }, 6000);
+    const interval = setInterval(
+      () => {
+        setBills((prev) => {
+          const next = [...prev];
+          if (next.length < 3) {
+            next.push(generateBill(Date.now()));
+          }
+          return next;
+        });
+      },
+      Math.random() * 2000 + 4000,
+    );
 
     setBills((prev) => {
       const next = [...prev];
@@ -63,7 +66,7 @@ const MoneyRain = () => {
         <motion.div
           key={bill.id}
           initial={{ top: "-10%", rotate: 0 }}
-          animate={{ top: "110%", rotate: bill.rotate }}
+          animate={{ top: "140%", rotate: bill.rotate }}
           transition={{ duration: bill.duration, ease: "linear" }}
           onAnimationComplete={() => handleAnimationComplete(bill.id)}
           style={{
