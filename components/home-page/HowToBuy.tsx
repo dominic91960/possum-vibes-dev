@@ -12,6 +12,14 @@ import Link from "next/link";
 const HowToBuy = () => {
   return (
     <section className="bg-light sticky top-0 overflow-x-clip">
+      <div className="h-[40vh] w-full">
+        <iframe
+          src="https://possum-rouge.vercel.app/"
+          style={{ width: "100%", height: "100%", border: "none" }}
+          title="Mint"
+        ></iframe>
+      </div>
+
       <Image
         src={cloud}
         alt="Cloud"
