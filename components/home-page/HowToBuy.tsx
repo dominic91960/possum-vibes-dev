@@ -7,18 +7,20 @@ import PrimaryButton from "../ui/PrimaryButton";
 import { howToBuyData } from "@/lib/constants";
 import cloud from "@/public/images/home-page/how-to-buy/cloud.png";
 import seperator from "@/public/images/home-page/how-to-buy/seperator.svg";
+import cardSeperator from "@/public/images/home-page/how-to-buy/card-seperator.svg";
 import Link from "next/link";
 
 const HowToBuy = () => {
   return (
     <section className="bg-light sticky top-0 overflow-x-clip">
-      <div className="h-[40vh] w-full">
-        <iframe
-          src="https://possum-rouge.vercel.app/"
-          style={{ width: "100%", height: "100%", border: "none" }}
-          title="Mint"
-        ></iframe>
-      </div>
+      <Image
+        src={seperator}
+        alt="Vector"
+        className="absolute top-0 right-0 left-0 w-full -translate-y-[40%] scale-105 select-none"
+        style={{
+          clipPath: "polygon(0 0%, 100% 0%, 100% 46%, 0 46%",
+        }}
+      />
 
       <Image
         src={cloud}
@@ -34,7 +36,7 @@ const HowToBuy = () => {
       <div className="px-container relative container mx-auto pb-[15%] sm:pb-[12%] lg:pb-[10%]">
         <SectionTitle
           text="Our tools"
-          className="mb-[0.5em] pt-[0.8em] text-center lg:pt-[0.5em]"
+          className="mb-[0.5em] pt-[0.8em] text-center"
         />
 
         <div className="grid grid-cols-1 gap-[2em] md:grid-cols-3 lg:gap-[2em] xl:gap-[4em] 2xl:gap-[9em]">
@@ -50,7 +52,7 @@ const HowToBuy = () => {
                   className="absolute right-0 bottom-0 left-0 w-full select-none"
                 />
                 <Image
-                  src={seperator}
+                  src={cardSeperator}
                   alt="Vector"
                   className="absolute top-full right-0 left-0 w-full -translate-y-[40%] scale-105 select-none"
                   style={{
