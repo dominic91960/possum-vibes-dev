@@ -7,17 +7,6 @@ import cloud from "@/public/images/home-page/how-to-buy/cloud.png";
 const Mint = () => {
   return (
     <section className="bg-light relative pb-[15%] sm:pb-[12%] lg:pb-[10%]">
-      <Image
-        src={cloud}
-        alt="Cloud"
-        className="absolute top-[50%] right-[5%] w-1/4 max-w-[550px] object-cover object-center select-none md:top-[15%]"
-      />
-      <Image
-        src={cloud}
-        alt="Cloud"
-        className="absolute top-[20%] left-[5%] w-1/4 max-w-[550px] object-cover object-center select-none md:top-[15%]"
-      />
-
       <div className="px-container relative container mx-auto">
         <SectionTitle
           text="Mint possom "
@@ -32,6 +21,17 @@ const Mint = () => {
           ></iframe>
         </div>
       </div>
+
+      <Image
+        src={cloud}
+        alt="Cloud"
+        className="absolute top-[10%] left-0 w-1/4 max-w-[550px] object-cover object-center select-none"
+      />
+      <Image
+        src={cloud}
+        alt="Cloud"
+        className="absolute top-[35%] right-0 w-1/4 max-w-[550px] object-cover object-center select-none"
+      />
     </section>
   );
 };
