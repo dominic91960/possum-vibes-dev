@@ -9,7 +9,7 @@ const Mint = () => {
     <section className="bg-light relative pb-[15%] sm:pb-[12%] lg:pb-[10%]">
       <div className="px-container relative container mx-auto">
         <SectionTitle
-          text="Mint possom "
+          text="Mint possum"
           className="mb-[0.5em] pt-[0.8em] text-center"
         />
 
