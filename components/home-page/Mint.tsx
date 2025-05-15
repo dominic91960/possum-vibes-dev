@@ -13,7 +13,7 @@ const Mint = () => {
           className="mb-[0.5em] pt-[0.8em] text-center"
         />
 
-        <div className="2xl:780px h-[700px]">
+        <div className="h-[700px] sm:h-[720px] md:h-[740px] lg:h-[760px] xl:h-[770px] 2xl:h-[780px]">
           <iframe
             src="https://possum-rouge.vercel.app/"
             style={{ width: "100%", height: "100%", border: "none" }}
