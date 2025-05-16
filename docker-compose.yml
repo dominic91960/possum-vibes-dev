@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  possum-vibes:
+    image: ${DOCKERHUB_USERNAME}/possum-vibes:latest
+    container_name: possum-vibes-container
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    # Add any required environment variables here
+    # environment:
+    #   - NODE_ENV=production
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
