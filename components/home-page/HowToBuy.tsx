@@ -1,18 +1,44 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import SectionTitle from "./SectionTitle";
 import PrimaryButton from "../ui/PrimaryButton";
 
+import { cn } from "@/lib/utils";
 import { howToBuyData } from "@/lib/constants";
 import cloud from "@/public/images/home-page/how-to-buy/cloud.png";
 import seperator from "@/public/images/home-page/how-to-buy/seperator.svg";
 import cardSeperator from "@/public/images/home-page/how-to-buy/card-seperator.svg";
-import Link from "next/link";
 
 const HowToBuy = () => {
+  const sectionRef = useRef<null | HTMLElement>(null);
+  const [display, setDisplay] = useState("relatve");
+
+  useEffect(() => {
+    const setSectionDisplay = () => {
+      if (!sectionRef.current) return;
+
+      const wHeight = window.innerHeight;
+      const sHeight = sectionRef.current.getBoundingClientRect().height;
+
+      if (wHeight > sHeight) setDisplay("sticky top-0");
+      else setDisplay("relative");
+    };
+
+    setSectionDisplay();
+    window.addEventListener("resize", setSectionDisplay);
+
+    return () => window.removeEventListener("resize", setSectionDisplay);
+  });
+
   return (
-    <section className="bg-light sticky top-0 overflow-x-clip">
+    <section
+      ref={sectionRef}
+      className={cn("bg-light overflow-x-clip", display)}
+    >
       <Image
         src={seperator}
         alt="Vector"
