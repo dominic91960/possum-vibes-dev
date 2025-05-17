@@ -38,7 +38,7 @@ export default function RootLayout({
             {children}
           </MotionConfig>
           <MoneyRain />
-          <div id="grainy"></div>
+          {/* <div id="grainy"></div> */}
         </SplashWrapper>
       </body>
     </html>
