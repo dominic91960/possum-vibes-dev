@@ -15,7 +15,7 @@ const HomePage = () => {
     <main>
       <PrimaryButton
         buttonText="buy $wtfo"
-        className="fixed right-0 bottom-[3em] left-0 z-50 mx-auto sm:bottom-[1em]"
+        className="fixed right-0 bottom-[3em] left-0 z-10 mx-auto sm:bottom-[1em]"
       />
       <Hero />
       <About />

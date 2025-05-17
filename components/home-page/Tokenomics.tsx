@@ -120,12 +120,12 @@ const Tokenomics = () => {
       <Image
         src={cloud}
         alt="Cloud"
-        className="absolute bottom-0 left-0 z-[1] w-[55%] -translate-x-[5%] translate-y-1/2 object-cover object-center select-none"
+        className="absolute bottom-0 left-0 z-[21] w-[55%] -translate-x-[5%] translate-y-1/2 object-cover object-center select-none"
       />
       <Image
         src={cloud}
         alt="Cloud"
-        className="absolute right-0 bottom-0 z-[1] w-[55%] translate-x-[5%] translate-y-1/2 object-cover object-center select-none"
+        className="absolute right-0 bottom-0 z-[21] w-[55%] translate-x-[5%] translate-y-1/2 object-cover object-center select-none"
       />
     </section>
   );
