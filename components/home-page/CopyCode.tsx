@@ -15,7 +15,7 @@ const CopyCode = () => {
 
   return (
     <p
-      className="mt-[1em] mb-[1.2em] cursor-pointer text-[20px] font-bold text-[#25F706] sm:text-[23px] md:text-[26px] lg:mt-[0.2em] lg:text-[29px] xl:text-[32px] 2xl:text-[35px]"
+      className="mt-[1em] mb-[1.2em] cursor-pointer text-[20px] font-bold text-[#25F706] text-shadow-[0.08em_0.08em_var(--color-dark)] sm:text-[23px] md:text-[26px] lg:mt-[0.2em] lg:text-[29px] xl:text-[32px] 2xl:text-[35px]"
       onClick={onCopy}
     >
       {isCopied ? "Copied to Clipboard!" : "Copy to Clipboard"}
