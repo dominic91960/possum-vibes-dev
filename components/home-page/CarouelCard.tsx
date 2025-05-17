@@ -42,7 +42,7 @@ const CarouelCard: React.FC<CarouelCardProps> = ({
           <p>
             {price}
             <span className="font-anton text-[0.5em] text-white">
-              &nbsp; ETH
+              &nbsp; SOL
             </span>
           </p>
         </div>
@@ -52,7 +52,8 @@ const CarouelCard: React.FC<CarouelCardProps> = ({
       <div className="p-[1em] pt-[0.6em]">
         <PrimaryButton
           buttonText={time}
-          className="w-full cursor-default overflow-hidden rounded-full border-none pt-[0.4em] pb-[0.1em] text-[16px] text-nowrap italic sm:text-[18px] md:text-[20px] lg:text-[23px] xl:text-[24.5px] 2xl:text-[26px]"
+          className="w-full overflow-hidden rounded-full border-none pt-[0.4em] pb-[0.1em] text-[16px] text-nowrap italic sm:text-[18px] md:text-[20px] lg:text-[23px] xl:text-[24.5px] 2xl:text-[26px]"
+          disabled
         />
       </div>
     </article>
