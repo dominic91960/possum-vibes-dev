@@ -6,7 +6,7 @@ import cloud from "@/public/images/home-page/how-to-buy/cloud.png";
 
 const Mint = () => {
   return (
-    <section className="bg-light relative pb-[15%] sm:pb-[12%] lg:pb-[10%]">
+    <section className="bg-secondary relative pb-[15%] sm:pb-[12%] lg:pb-[10%]">
       <div className="px-container relative container mx-auto">
         <SectionTitle
           text="Mint possum"

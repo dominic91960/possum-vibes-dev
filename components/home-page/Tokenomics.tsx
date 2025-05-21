@@ -17,11 +17,11 @@ import CoinGeckoIcon from "../ui/CoinGeckoIcon";
 
 const Tokenomics = () => {
   return (
-    <section className="relative overflow-x-clip pt-[6vw]">
+    <section className="relative overflow-x-clip bg-[#96897B] pt-[6vw]">
       <Image
         src={bg}
         alt="Tokenomics"
-        className="absolute inset-0 size-full object-cover object-bottom select-none"
+        className="absolute inset-0 size-full rounded-t-[40px] object-cover object-bottom select-none sm:rounded-t-[50px] md:rounded-t-[60px] lg:rounded-t-[70px] xl:rounded-t-[80px] 2xl:rounded-t-[90px]"
       />
       <div className="absolute right-0 bottom-0 left-0 h-[40%] bg-gradient-to-t from-[#767272] to-transparent"></div>
 

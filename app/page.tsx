@@ -4,7 +4,7 @@ import Hero from "@/components/home-page/hero/Hero";
 import About from "@/components/home-page/About";
 import Mint from "@/components/home-page/Mint";
 import HowToBuy from "@/components/home-page/HowToBuy";
-import Collection from "@/components/home-page/Collection";
+// import Collection from "@/components/home-page/Collection";
 import Tokenomics from "@/components/home-page/Tokenomics";
 import Footer from "@/components/home-page/Footer";
 import PrimaryButton from "@/components/ui/PrimaryButton";
@@ -22,7 +22,7 @@ const HomePage = () => {
       <Mint />
       <HowToBuy />
       <RevenueShare />
-      <Collection />
+      {/* <Collection /> */}
       <Tokenomics />
       <Footer />
     </main>
