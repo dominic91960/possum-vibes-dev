@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
+import { cn } from "@/lib/utils";
 import SectionTitle from "./SectionTitle";
 import possom from "@/public/images/home-page/revenue-share/possom.png";
 import seperator from "@/public/images/home-page/revenue-share/seperator.svg";
@@ -18,7 +19,7 @@ const RevenueShare = () => {
         }}
       />
 
-      <div className="px-container relative container mx-auto">
+      <div className="px-container relative container mx-auto pb-[5em]">
         <SectionTitle
           className="mb-[0.5em] pt-[0.8em] text-center min-[450px]:hidden"
           text="$wtfo revenue_share"
@@ -46,15 +47,33 @@ const RevenueShare = () => {
             </p>
           </div>
 
-          <div className={classes["image-area"]}>
+          <div className={cn("relative", classes["image-area"])}>
             <Image
               src={possom}
               alt="Possom"
               className="mx-auto w-1/2 object-cover object-center sm:w-1/3 lg:w-full"
             />
+
+            <Image
+              src={seperator}
+              alt="Vector"
+              className="absolute right-0 bottom-0 left-0 z-[1] w-full translate-y-[55%] scale-105 opacity-100 select-none"
+              style={{
+                clipPath: "polygon(0 0%, 100% 0%, 100% 46%, 0 46%",
+              }}
+            />
           </div>
         </div>
       </div>
+
+      {/* <Image
+        src={seperator}
+        alt="Vector"
+        className="absolute right-0 bottom-0 left-0 z-[1] w-full translate-y-[45%] scale-105 rotate-180 rotate-y-180 opacity-100 select-none"
+        style={{
+          clipPath: "polygon(0 0%, 100% 0%, 100% 46%, 0 46%",
+        }}
+      /> */}
     </section>
   );
 };

@@ -9,7 +9,7 @@ import seperator from "@/public/images/home-page/about/seperator.svg";
 
 const About = () => {
   return (
-    <section className="bg-light relative overflow-x-clip pt-[10vw]">
+    <section className="bg-secondary relative overflow-x-clip pt-[10vw]">
       <Image
         src={bg}
         alt="Background"
