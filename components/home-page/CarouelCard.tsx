@@ -1,23 +1,15 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 
-import PrimaryButton from "../ui/PrimaryButton";
-
 interface CarouelCardProps {
   name: string;
   img: StaticImageData;
   price: string;
-  time: string;
 }
 
-const CarouelCard: React.FC<CarouelCardProps> = ({
-  name,
-  img,
-  price,
-  time,
-}) => {
+const CarouelCard: React.FC<CarouelCardProps> = ({ name, img, price }) => {
   return (
-    <article className="bg-light border-dark relative mx-auto flex w-[240px] flex-col justify-between overflow-hidden rounded-[24px] border-[0.1em] shadow-[0.3em_0.3em_var(--color-dark)] sm:w-[270px] sm:rounded-[29px] md:w-[300px] md:rounded-[32px] lg:w-[330px] lg:rounded-[36px] xl:w-[360px] xl:rounded-[40px] 2xl:w-[390px] 2xl:rounded-[44px]">
+    <article className="bg-light border-dark relative mx-auto flex w-[240px] flex-col justify-between overflow-hidden rounded-[24px] border-[0.1em] pb-[1.5em] shadow-[0.3em_0.3em_var(--color-dark)] sm:w-[270px] sm:rounded-[29px] md:w-[300px] md:rounded-[32px] lg:w-[330px] lg:rounded-[36px] xl:w-[360px] xl:rounded-[40px] 2xl:w-[390px] 2xl:rounded-[44px]">
       {/* Name */}
       <div className="bg-light text-dark absolute top-0 left-0 w-3/4 overflow-hidden rounded-br-full ps-[0.9em] pe-[1.1em] pt-[0.5em] pb-[0.3em] text-center text-[18px] sm:text-[20px] md:text-[22px] lg:text-[25px] xl:text-[26.5px] 2xl:text-[28px]">
         <p className="line-clamp-1 font-semibold">{name}</p>
@@ -44,24 +36,19 @@ const CarouelCard: React.FC<CarouelCardProps> = ({
         <p className="text-[18px] font-semibold sm:text-[20px] md:text-[22px] lg:text-[25px] xl:text-[26.5px] 2xl:text-[28px]">
           Current price :
         </p>
-
-        <div className="bg-primary grow rounded-l-full pt-[0.2em] pb-[0.1em] text-center text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[25px] 2xl:text-[26px]">
-          <p>
-            {price}
-            <span className="font-anton text-[0.5em] text-white">
-              &nbsp; SOL
-            </span>
-          </p>
-        </div>
       </div>
 
-      {/* Time */}
-      <div className="p-[1em] pt-[1.6em]">
-        <PrimaryButton
-          buttonText={time}
-          className="w-full overflow-hidden rounded-full border-none pt-[0.4em] pb-[0.1em] text-[16px] text-nowrap italic sm:text-[18px] md:text-[20px] lg:text-[23px] xl:text-[24.5px] 2xl:text-[26px]"
-          disabled
-        />
+      <div className="bg-primary text-dark ms-auto mt-[0.3em] rounded-l-full px-[1em] pt-[0.2em] pb-[0.1em] text-center text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[25px] 2xl:text-[26px]">
+        <p>
+          {price}&nbsp;
+          <span className="font-anton text-[0.6em] text-white text-shadow-[0.05em_0.05em_black]">
+            SOL
+          </span>
+          &nbsp;+ 0.025&nbsp;
+          <span className="font-anton text-[0.6em] text-white text-shadow-[0.05em_0.05em_black]">
+            SOL FEE
+          </span>
+        </p>
       </div>
     </article>
   );
