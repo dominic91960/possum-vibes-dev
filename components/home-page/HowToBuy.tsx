@@ -65,11 +65,11 @@ const HowToBuy = () => {
           className="mb-[0.5em] pt-[0.8em] text-center"
         />
 
-        <div className="grid grid-cols-1 gap-[2em] md:grid-cols-3 lg:gap-[2em] xl:gap-[4em] 2xl:gap-[9em]">
+        <div className="grid grid-cols-1 gap-[2em] sm:grid-cols-2 lg:gap-[4em] xl:grid-cols-4 xl:gap-[2em]">
           {howToBuyData.map(({ id, icon, title, text, buttonText, href }) => (
             <div
               key={id}
-              className="border-dark mx-auto mt-[25%] flex w-fit flex-col items-center gap-[0.2em] rounded-[1em] border-[0.2em] bg-[#FFFFDF] px-[2em] pt-[4em] pb-[1.2em] text-center shadow-[0.3em_0.3em_var(--color-dark)] md:mt-[20%]"
+              className="border-dark mx-auto mt-[25%] flex w-fit flex-col items-center gap-[0.2em] rounded-[1em] border-[0.2em] bg-[#FFFFDF] px-[2em] pt-[4em] pb-[1.2em] text-center shadow-[0.3em_0.3em_var(--color-dark)] md:mt-[28%] xl:mt-[10%]"
             >
               <div className="relative mx-auto aspect-[5/2] w-4/5 overflow-x-clip">
                 <Image
@@ -95,10 +95,10 @@ const HowToBuy = () => {
                 {text}
               </p>
 
-              <Link href={href} className="mt-auto">
+              <Link href={href} className="mt-auto w-full">
                 <PrimaryButton
                   buttonText={buttonText}
-                  className="text-[1.4em] sm:text-[1.4em] md:text-[1.4em] lg:text-[1.4em] xl:text-[1.4em] 2xl:text-[1.4em]"
+                  className="w-full px-0 text-[1.4em] sm:text-[1.4em] md:text-[1.4em] lg:text-[1.4em] xl:text-[1.4em] 2xl:text-[1.4em]"
                   spanStyle="bg-[#FFFFEF]"
                 />
               </Link>
