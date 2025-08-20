@@ -123,6 +123,14 @@ const Footer = () => {
                 Dextools
               </Link>
             </li>
+            <li>
+              <Link
+                href="/whitepaper"
+                className="hover:text-light focus:text-light underline"
+              >
+                Whitepaper
+              </Link>
+            </li>
           </ul>
 
           <ul className="list-inside list-disc space-y-[1em] lg:space-y-[0.2em]">
