@@ -2,7 +2,7 @@ name: Deploy Possum Vibes
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
   workflow_dispatch:
 
 jobs:
@@ -43,6 +43,8 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/possum-vibes:latest
+          build-args: |
+            NEXT_PUBLIC_SOLANATRACKER_API_KEY=${{ secrets.NEXT_PUBLIC_SOLANATRACKER_API_KEY }}
           cache-from: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/possum-vibes:latest
           cache-to: type=inline
 
