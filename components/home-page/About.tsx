@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 
 import SectionTitle from "./SectionTitle";
-// import PrimaryButton from "../ui/PrimaryButton";
+import TokenStats from "./TokenStats";
+
 import bg from "@/public/images/home-page/about/bg.jpg";
 import possom from "@/public/images/home-page/about/possom.png";
 import seperator from "@/public/images/home-page/about/seperator.svg";
@@ -27,16 +28,8 @@ const About = () => {
       />
 
       <div className="px-container relative container mx-auto">
-        <SectionTitle
-          className="mb-[0.3em] min-[450px]:hidden sm:block"
-          text="About $wtfo_possum"
-        />
-        <SectionTitle
-          className="mb-[0.3em] hidden min-[450px]:block sm:hidden"
-          text="About $wtfo possum"
-        />
-
-        <p className="pb-[0.5em] text-[16px] text-shadow-[0.1em_0.1em_0_#212121] sm:w-[32ch] sm:pb-[2em] sm:text-[20px] md:text-[24px] lg:text-[28px] lg:text-shadow-[0.05em_0.05em_0_#212121] xl:text-[32px] 2xl:text-[36px]">
+        <SectionTitle className="mb-[0.3em]" text="About $wtfo possum" />
+        <p className="text-[16px] text-shadow-[0.1em_0.1em_0_#212121] sm:text-[20px] md:text-[24px] lg:text-[28px] lg:text-shadow-[0.05em_0.05em_0_#212121] xl:text-[32px] 2xl:text-[36px]">
           WTFO is not your regular boring Sol meme. Wtfo is different. A unique
           character who combines meme with utility. The Possum of the
           Blockchain. We give you that What The F... Feeling!
@@ -45,16 +38,15 @@ const About = () => {
           Loads of utilities and vibes!
         </p>
 
-        {/* <PrimaryButton
-          buttonText="Buy $wtfo"
-          className="mb-[0.2em] sm:mb-[2.6em]"
-        /> */}
+        <div className="mt-[3em] grid grid-cols-1 gap-[1.5em] lg:mt-[2em] lg:grid-cols-2 lg:items-end xl:-mt-[5em]">
+          <TokenStats />
 
-        <Image
-          src={possom}
-          alt="Possom"
-          className="object-cover object-center sm:absolute sm:right-0 sm:bottom-0 sm:w-1/2"
-        />
+          <Image
+            src={possom}
+            alt="Possom"
+            className="object-cover object-center"
+          />
+        </div>
       </div>
     </section>
   );
