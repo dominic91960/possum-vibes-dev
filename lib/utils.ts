@@ -5,20 +5,28 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function formatNumber(value: number, type = "default") {
+export function formatNumber(value: number) {
   if (value == null) return "0";
 
-  // MarketCap: use shorthand (K, M, B)
-  if (type === "marketCap") {
-    if (value >= 1e9)
-      return (value / 1e9).toFixed(2).replace(/\.0+$/, "") + "B";
-    if (value >= 1e6)
-      return (value / 1e6).toFixed(2).replace(/\.0+$/, "") + "M";
-    if (value >= 1e3)
-      return (value / 1e3).toFixed(2).replace(/\.0+$/, "") + "K";
-    return value.toLocaleString();
-  }
+  if (value >= 1e9) return (value / 1e9).toFixed(2).replace(/\.0+$/, "") + "B";
+  if (value >= 1e6) return (value / 1e6).toFixed(2).replace(/\.0+$/, "") + "M";
 
-  // Default: just format with commas, round if needed
   return Math.round(value).toLocaleString();
+}
+
+export function calculateCurrentSupply(
+  pools: {
+    marketCap?: {
+      usd?: number;
+    };
+    price?: {
+      usd?: number;
+    };
+  }[],
+) {
+  for (const pool of pools) {
+    if (pool?.marketCap?.usd && pool?.price?.usd)
+      return pool.marketCap.usd / pool.price.usd;
+  }
+  return 0;
 }
