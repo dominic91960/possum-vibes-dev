@@ -38,13 +38,13 @@ const About = () => {
           Loads of utilities and vibes!
         </p>
 
-        <div className="mt-[3em] grid grid-cols-1 gap-[1.5em] lg:mt-[2em] lg:grid-cols-2 lg:items-end xl:-mt-[5em]">
+        <div className="mt-[3em] grid grid-cols-1 gap-[1.5em] lg:mt-[2em] xl:grid-cols-11 xl:items-end">
           <TokenStats />
 
           <Image
             src={possom}
             alt="Possom"
-            className="object-cover object-center"
+            className="object-cover object-center xl:col-span-5"
           />
         </div>
       </div>
